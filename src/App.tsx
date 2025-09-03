@@ -1,20 +1,14 @@
-import { useState } from 'react'
-import reactLogo from './assets/react.svg'
-import viteLogo from '/vite.svg'
 import './App.css'
-import {Text} from './components/text/Text'
+import LeftTopNav from './components/topNav/leftTopNav'
+import MidTopNav from './components/topNav/midTopNav'
+
+
 function App() {
-  const [count, setCount] = useState(0)
 
   return (
     <>
-      <Text variant="h1">Hi There</Text>
-      <Text variant="h2">Hi There</Text>
-      <Text variant="p">Hi There</Text>
-      <Text variant="span">Hi There</Text>
-
- 
-      
+      <LeftTopNav />
+      <MidTopNav />
     </>
   )
 }
