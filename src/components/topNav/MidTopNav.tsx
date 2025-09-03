@@ -2,18 +2,24 @@ import React from 'react';
 
 
 
-export default function midnav() {
+export default function Midnav() {
   return (
     <div id='topNavBar' >
-    <div className='midTopNav' style={{
-      width: '100%',
-      height: '50%',
-    }}>
-            <h6>HOW WE WORK</h6>
-            <h6>ABOUT</h6>
-            <h6>CONTACT</h6>
+    <div className='midTopNav' >
 
-<div className='viewButton'><button>VIEW PLANS</button></div>
+        <div className='navItems' style={{ 
+    fontSize: '10px', 
+    marginRight:'15px', 
+   }}>
+            <div >HOW WE WORK</div>
+            <div>BLOG</div>
+            <div >ACCOUNT</div>
+
+<div className='viewButton' ><button style={{ 
+    fontSize: '10px', 
+    padding:'5px', 
+    borderRadius: '2px' }}>VIEW PLANS</button></div>
+    </div>
     </div>
   
     </div>
