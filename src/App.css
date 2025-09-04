@@ -96,8 +96,11 @@ hr {
 .footer {
   height: 15vh;
   width: 100%;
-  background-image: url(./assets/insure-landing-page-master/images/bg-pattern-footer-mobile.svg);
+  background-image: url(./assets/insure-landing-page-master/images/bg-pattern-footer-desktop.svg);
   margin-top: 6.5rem;
+  background-repeat: no-repeat;
+  border: 2px solid red;
+  background-size: contain;
 }
 
 .bottomnav {
@@ -105,15 +108,33 @@ hr {
   /* justify-content: space-between;
   align-items: center; */
   flex-direction: row;
-
 }
 
 .bottomNavBar {
-  border: 2px solid blue;
+  /* border: 2px solid blue; */
   display: flex;
   flex-direction: row;
   justify-content: center;
   align-content: center;
   align-items: start;
-  
+}
+
+.midMapImage {
+  width: 20%;
+  height: 30%;
+  margin-top: -10%;
+  padding: 15%;
+  background-image: url(./assets/insure-landing-page-master/images/bg-pattern-intro-left-desktop.svg);
+  background-repeat: no-repeat;
+  background-size: contain;
+}
+
+.mapImage {
+  /* border: 1px solid red; */
+  width: 10px;
+  padding: 0px;
+  background-image: url(./assets/insure-landing-page-master/images/bg-pattern-intro-right-desktop.svg);
+  background-repeat: no-repeat;
+  background-size: cover;
+  position: absolute;
 }

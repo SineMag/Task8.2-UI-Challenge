@@ -6,7 +6,7 @@ import MainLeft from "./components/topSection/MainLeft";
 import Paragraph from "./components/topSection/Paragraph";
 import ShortLine from "./components/topSection/ShortLine";
 import Image from "./components/topSection/Image";
-import MapImage from "./components/topSection/MapImage";
+// import MapImage from "./components/topSection/MapImage";
 import ViewButton from "./components/topSection/ViewButton";
 import Icons from "./components/midSection/SnappyIcons";
 import SnappyIcons from "./components/midSection/SnappyIcons";
@@ -15,6 +15,9 @@ import ListNav from "./components/bottomSection/footer/ListNav";
 import SocialIcons from "./components/bottomSection/footer/SocialIcons";
 import Line from "./components/bottomSection/footer/Line";
 import SubHeadings from "./components/bottomSection/footer/SubHeadings";
+import MidMap from "./components/topSection/MidMap";
+import MapImage from "./components/topSection/MapImage";
+import BottomMapImage from "./components/midSection/BottomMapImage";
 
 function App() {
   return (
@@ -37,12 +40,18 @@ function App() {
             <Paragraph />
             <ViewButton />
           </div>
-          <div className="image"></div>
+          <div className="map">{/* <MapImage /> */}</div>
+          <div className="image">
+            <Image />
+            <BottomMapImage />
+          </div>
         </div>
         {/* middle main conten */}
         <div className="middleMainContent">
+          <div className="midmap">
+            <MidMap />
+          </div>
           <div className="weAreDiff">
-            
             <DifferentText />
           </div>
           <div className="snappy">
@@ -50,13 +59,14 @@ function App() {
           </div>
           <div className="bottomSection">
             <Subheading />
+            <MapImage/>
           </div>
 
           <footer className="footer">
             <SocialIcons />
             <Line />
             <ListNav />
-            <SubHeadings/>
+            <SubHeadings />
           </footer>
         </div>
       </div>

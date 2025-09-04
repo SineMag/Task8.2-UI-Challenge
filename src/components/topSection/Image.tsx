@@ -1,8 +1,8 @@
 import React from 'react'
 
-export default function Image() {
+export default function ImageMap() {
   return (
-    <div className='image' >
+    <div className='heroImage'>
     </div>
 
    
