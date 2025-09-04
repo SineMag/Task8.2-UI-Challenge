@@ -25,6 +25,7 @@ export default function Subheading() {
       style={{
         width:'50%',
         fontSize: '20px',
+        paddingLeft: '10%',
       }}>Find out more about how we work</p>
 
       <div className="viewButton" style={{

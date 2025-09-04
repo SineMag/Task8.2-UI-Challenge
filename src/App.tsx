@@ -11,6 +11,7 @@ import ViewButton from "./components/topSection/ViewButton";
 import Icons from "./components/midSection/SnappyIcons";
 import SnappyIcons from "./components/midSection/SnappyIcons";
 import Subheading from "./components/midSection/Subheading";
+import ListNav from "./components/bottomSection/footer/ListNav";
 
 function App() {
   return (
@@ -46,6 +47,10 @@ function App() {
           </div>
           <div className="bottomSection">
             <Subheading />
+          </div>
+
+          <div className="bottomNav">
+            <ListNav />
           </div>
         </div>
       </div>
