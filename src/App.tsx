@@ -13,6 +13,7 @@ import SnappyIcons from "./components/midSection/SnappyIcons";
 import Subheading from "./components/midSection/Subheading";
 import ListNav from "./components/bottomSection/footer/ListNav";
 import SocialIcons from "./components/bottomSection/footer/SocialIcons";
+import Line from "./components/bottomSection/footer/Line";
 
 function App() {
   return (
@@ -55,6 +56,7 @@ function App() {
           </div>
           <footer className="footer">
             <SocialIcons />
+            <Line />
           </footer>
         </div>
       </div>

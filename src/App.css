@@ -100,8 +100,14 @@ hr {
   margin-top: 6.5rem;
 }
 
+/* 
+.insureImage {
+  background-image: url(./assets/insure-landing-page-master/images/logo.svg);
+  background-repeat: no-repeat;
+  background-position: start;
+  background-size: contain;
 
-
+} */
 
 /* .socialIcons {
   border: 2px solid red;

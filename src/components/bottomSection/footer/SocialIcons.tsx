@@ -3,7 +3,7 @@ import Image from "../../../assets/insure-landing-page-master/images/icon-facebo
 import Twitter from "../../../assets/insure-landing-page-master/images/icon-twitter.svg";
 import Pinterest from "../../../assets/insure-landing-page-master/images/icon-pinterest.svg";
 import Instagram from "../../../assets/insure-landing-page-master/images/icon-instagram.svg";
-
+import InsureLogo from "../../../assets/insure-landing-page-master/images/logo.svg";
 export default function SocialIcons() {
   return (
     <div className="socialIconsContainer" style={{
@@ -11,12 +11,18 @@ export default function SocialIcons() {
         marginTop: "3rem",        
         width: "100%",
         // height: "15vh",
-        justifyContent: "end",
-        padding: "1rem",
+        justifyContent: "space-between",
+        padding: "1.5rem",
         alignItems: "start",
     }}>
 
+<div className="insureImage">
+        <img style={{
+            width: "40%",
+            height: "15%",
 
+        }} src={InsureLogo} alt="Insure Logo" />
+</div>
     <div className="socialIcons" 
     >
       <div style={{
