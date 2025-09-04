@@ -51,12 +51,10 @@ function App() {
             <Subheading />
           </div>
 
-          <div className="bottomNav">
-            <ListNav />
-          </div>
           <footer className="footer">
             <SocialIcons />
             <Line />
+            <ListNav />
           </footer>
         </div>
       </div>
