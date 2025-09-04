@@ -53,9 +53,9 @@ function App() {
           <div className="bottomNav">
             <ListNav />
           </div>
-          <div>
+          <footer className="footer">
             <SocialIcons />
-          </div>
+          </footer>
         </div>
       </div>
     </>

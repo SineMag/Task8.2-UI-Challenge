@@ -6,25 +6,45 @@ import Instagram from "../../../assets/insure-landing-page-master/images/icon-in
 
 export default function SocialIcons() {
   return (
-    <div className="socialIcons"
-      style={{
+    <div className="socialIconsContainer" style={{
         display: "flex",
-        border: "1px solid red",
+        marginTop: "3rem",        
         width: "100%",
-        height: "15vh",
-        flexDirection: "row",
+        // height: "15vh",
         justifyContent: "end",
-      }}
+        padding: "1rem",
+        alignItems: "start",
+    }}>
+
+
+    <div className="socialIcons" 
     >
-      <div className="facebookIcon"  style={{
-            fontSize: "2px",
+      <div style={{
+            fontSize: "2px",       
+
         }} >
-        <img src={Image} alt="Facebook" />
-        <img src={Twitter} alt="Twitter" />
-        <img src={Pinterest} alt="Pinterest" />
-        <img src={Instagram} alt="Instagram" />
+        <img style={{
+            width: "15px",
+            height: "15px",
+            marginRight: "0.5rem",
+        }} src={Image} alt="Facebook" />
+        <img style={{
+            width: "15px",
+            height: "15px",
+            marginRight: "1rem",
+        }}  src={Twitter} alt="Twitter" />
+        <img style={{
+            width: "15px",
+            height: "15px",
+            marginRight: "1rem",
+        }}  src={Pinterest} alt="Pinterest" />
+        <img style={{
+            width: "15px",
+            height: "15px",
+            marginRight: "1rem",
+        }}  src={Instagram} alt="Instagram" />
       </div>
-    
+    </div>
     </div>
   );
 }
