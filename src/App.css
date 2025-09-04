@@ -108,3 +108,12 @@ hr {
 
 }
 
+.bottomNavBar {
+  border: 2px solid blue;
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+  align-content: center;
+  align-items: start;
+  
+}
