@@ -12,6 +12,7 @@ import Icons from "./components/midSection/SnappyIcons";
 import SnappyIcons from "./components/midSection/SnappyIcons";
 import Subheading from "./components/midSection/Subheading";
 import ListNav from "./components/bottomSection/footer/ListNav";
+import SocialIcons from "./components/bottomSection/footer/SocialIcons";
 
 function App() {
   return (
@@ -51,6 +52,9 @@ function App() {
 
           <div className="bottomNav">
             <ListNav />
+          </div>
+          <div>
+            <SocialIcons />
           </div>
         </div>
       </div>
