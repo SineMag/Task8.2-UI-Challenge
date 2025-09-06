@@ -1,0 +1,113 @@
+.header {
+  padding: 20px 0;
+  background: var(--white);
+  position: relative;
+  z-index: 10;
+}
+
+.headerContainer {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.logo {
+  font-family: 'DM Serif Display', serif;
+  font-size: 32px;
+  color: var(--very-dark-violet);
+  text-decoration: none;
+  background-image: url(../);
+}
+
+.navMenu {
+  display: flex;
+  list-style: none;
+}
+
+.navMenu li {
+  margin-left: 30px;
+}
+
+.navMenu a {
+  text-decoration: none;
+  color: var(--dark-grayish-violet);
+  font-weight: 700;
+  text-transform: uppercase;
+  font-size: 14px;
+  letter-spacing: 1px;
+  transition: color 0.3s ease;
+}
+
+.navMenu a:hover {
+  color: var(--very-dark-violet);
+}
+
+.viewPlansBtn {
+  border: 2px solid var(--very-dark-violet);
+  padding: 8px 16px;
+}
+
+.viewPlansBtn:hover {
+  background: var(--very-dark-violet);
+  color: var(--white) !important;
+}
+
+.mobileMenuBtn {
+  display: none;
+  flex-direction: column;
+  justify-content: space-around;
+  width: 30px;
+  height: 24px;
+  background: transparent;
+  border: none;
+  cursor: pointer;
+  padding: 0;
+}
+
+.mobileMenuBtn span {
+  width: 30px;
+  height: 3px;
+  background: var(--very-dark-violet);
+  transition: all 0.3s ease;
+}
+
+/* Media Queries */
+@media (max-width: 768px) {
+  .mobileMenuBtn {
+    display: flex;
+    z-index: 20;
+  }
+
+  .nav {
+    position: fixed;
+    top: 0;
+    right: -100%;
+    width: 80%;
+    height: 100vh;
+    background: var(--very-dark-violet);
+    padding: 100px 30px 30px;
+    transition: right 0.3s ease;
+    z-index: 15;
+  }
+
+  .navOpen {
+    right: 0;
+  }
+
+  .navMenu {
+    flex-direction: column;
+  }
+
+  .navMenu li {
+    margin: 15px 0;
+  }
+
+  .navMenu a {
+    color: var(--white);
+    font-size: 18px;
+  }
+
+  .viewPlansBtn {
+    border-color: var(--white);
+  }
+}
