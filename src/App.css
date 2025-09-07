@@ -1,61 +1,62 @@
-/* CSS Variables */
-:root {
-  --dark-violet: hsl(256, 26%, 20%);
-  --grayish-blue: hsl(216, 30%, 68%);
-  --very-dark-violet: hsl(270, 9%, 17%);
-  --dark-grayish-violet: hsl(273, 4%, 51%);
-  --very-light-gray: hsl(0, 0%, 98%);
-  --white: hsl(0, 0%, 100%);
-}
+/* @import url('https://fonts.googleapis.com/css2?family=DM+Serif+Display&family=Karla:wght@400;700&display=swap'); */
 
-/* Global Styles */
+
 * {
-  margin: 0;
-  padding: 0;
+
   box-sizing: border-box;
-  border: px solid red;
-}
 
-body, html, #root {
-  font-family: 'Karla', sans-serif;
-  font-size: 16px;
-  line-height: 1.6;
-  color: var(--dark-grayish-violet);
-  overflow-x: hidden;
-}
+  padding: 0;
 
-h1, h2, h3, h4 {
-  font-family: 'DM Serif Display', serif;
-  font-weight: 400;
-  color: var(--very-dark-violet);
-}
+  margin: 0;
 
-.container {
-  width: 100%;
-  max-width: 1200px;
-  margin: 0 auto;
-  padding: 0 20px;
-}
-
-.btn {
-  display: inline-block;
-  padding: 12px 24px;
-  border: 2px solid var(--very-dark-violet);
-  background: transparent;
-  color: var(--very-light-gray);
-  text-transform: uppercase;
-  text-decoration: none;
-  font-weight: 700;
-  font-size: 14px;
-  letter-spacing: 1px;
-  cursor: pointer;
 }
 
 
-.btn-light {
-  border-color: var(--white);
-  color: var(--white);
+html, body, #root {
+
+  /* margin: 1.3rem 10rem; */
+
+  background-color: var(--very-light-gray);
+  scroll-behavior: smooth;
+  border: 5px solid red;
+
 }
 
 
+:root {
 
+  --dark-violet: hsl(256, 26%, 20%);
+
+  --grayish-blue: hsl(216, 23%, 36%);
+
+  --very-dark-violet: hsl(270, 9%, 17%);
+
+  --very-grayish-violet: hsl(273, 4%, 51%);
+
+  --very-light-gray: hsl(0, 0%, 98%);
+
+}
+
+
+::-webkit-scrollbar {
+
+  width: 0.4rem;
+
+  color: hsl(256, 26%, 20%);
+
+}
+
+
+::-webkit-scrollbar-thumb {
+
+  background-color: hsl(256, 26%, 20%);
+
+}
+
+
+/* fonts */
+
+
+/* font-family: 'DM Serif Display', serif;
+
+font-family: 'Karla', sans-serif; */
