@@ -1,55 +1,77 @@
 <img src="https://socialify.git.ci/SineMag/Task8.2-UI-Challenge/image?language=1&owner=1&name=1&stargazers=1&theme=Light" alt="Task8.2-UI-Challenge" width="640" height="320" />
 
+# Task 8.2 UI Challenge
 
-# 🎨 Task 8.2 — UI Completion Challenge
-
-## 📖 Overview
-This project is part of Task 2.2 (UI Completion Challenge).  
-The goal is to complete the given UI based on the **desktop** and **mobile** design screenshots.
-
-This is a **front-end only challenge** focusing on **HTML & CSS** (with optional JavaScript for interactivity).
+A simple React UI project built with **Vite**, **TypeScript**, and **React 19**.  
+The project includes a `Navbar`, `Hero`, `Main`, and `Footer` component for a modular UI structure.
 
 ---
 
-## 🖼️ Design Reference
-The design images are included in the `/assets` folder:
-- `desktop-design.png`
-- `mobile-design.png`
+## 🚀 Tech Stack
+
+- **React** `^19.1.1`
+- **React DOM** `^19.1.1`
+- **Vite** `^7.1.2` – fast development build tool
+- **TypeScript** `~5.8.3`
+- **ESLint** `^9.33.0` – linting
+- **@vitejs/plugin-react** `^5.0.0`
 
 ---
 
-## 🏗️ Project Structure
+## ✨ Features
+- Responsive Navbar
+- Hero section with intro content
+- Modular components (Navbar, Hero, Main, Footer)
+- Styled with CSS + optional styled-components
+- Icons via react-icons
+---
+
+## 📂 Project Structure
+
 ```
-ui-completion-challenge/
-|── README.md
-│── index.html
-│── style.css
-│── /assets
-│    ├── desktop-design.png
-│    ├── mobile-design.png
-│    └── (any other images/icons used)
-│── /css
-│    └── (if you split multiple CSS files)
-│── /js   (optional, only if you add interactivity)
-    └── script.js
+src/
+├── components/
+│ ├── Navbar.tsx
+│ ├── Hero.tsx
+│ ├── Main.tsx
+│ └── Footer.tsx
+├── App.tsx
+├── App.css
+└── main.tsx
 ```
-
 
 ---
 
-## 🚀 Getting Started
-1. Clone this repo:
-   ```sh
-   git clone https://github.com/your-username/ui-completion-challenge.git
-   cd ui-completion-challenge
+## ⚡ Getting Started
+
+### 1️⃣ Clone the repository
+
+```bash
+git clone https://github.com/SineMag/Task8.2-UI-Challenge
+cd task-8.2-ui-challenge
+```
+
+### 2️⃣ Install dependencies
+```bash
+npm install
+```
+
+```bash
+npm install react-icons
+```
+```bash
+npm install styled-components
+```
 
 
-🛠️ Tools & Methods
+### 3️⃣ Start the development server
+```bash
+npm run dev
+```
 
-* HTML5 for structure
-* CSS3 (Flexbox + Grid + Media Queries) for layout & responsiveness
-* JavaScript (optional) for extra interactivity
+## 📸 Designs
+- Mobile Design  
+  ![Mobile Design](./src/assets/mobile-design.jpg)
 
-📱 Responsiveness
-
-This UI is responsive for both desktop and mobile based on provided designs.
+- Desktop Design  
+  ![Desktop Design](./src/assets/desktop-design.jpg)
