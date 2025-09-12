@@ -190,13 +190,7 @@ export const Footer = () => {
 
       <div className='attribute'>
 
-        <span>
-
-          Made With â¤ï¸ By <a href='github.com/trillionclues'>Trillionclues</a>{' '}
-
-          &copy; 2022{' '}
-
-        </span>
+       
 
       </div>
 
