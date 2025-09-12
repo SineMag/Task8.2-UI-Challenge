@@ -1,30 +1,23 @@
 /* @import url('https://fonts.googleapis.com/css2?family=DM+Serif+Display&family=Karla:wght@400;700&display=swap'); */
 
-
 * {
-
   box-sizing: border-box;
 
   padding: 0;
 
   margin: 0;
-
 }
 
-
-html, body, #root {
-
+html,
+body,
+#root {
   /* margin: 1.3rem 10rem; */
 
   background-color: var(--very-light-gray);
   scroll-behavior: smooth;
-  border: 5px solid red;
-
 }
 
-
 :root {
-
   --dark-violet: hsl(256, 26%, 20%);
 
   --grayish-blue: hsl(216, 23%, 36%);
@@ -34,28 +27,19 @@ html, body, #root {
   --very-grayish-violet: hsl(273, 4%, 51%);
 
   --very-light-gray: hsl(0, 0%, 98%);
-
 }
 
-
 ::-webkit-scrollbar {
-
   width: 0.4rem;
 
   color: hsl(256, 26%, 20%);
-
 }
-
 
 ::-webkit-scrollbar-thumb {
-
   background-color: hsl(256, 26%, 20%);
-
 }
 
-
 /* fonts */
-
 
 /* font-family: 'DM Serif Display', serif;
 
