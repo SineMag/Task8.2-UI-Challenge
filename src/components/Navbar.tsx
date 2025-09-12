@@ -1,140 +1,86 @@
-import React, { useState } from 'react'
+import React, { useState } from "react";
 
-import styled from 'styled-components'
+import styled from "styled-components";
 
-import logo from '../assets/logo.svg'
+import logo from "../assets/logo.svg";
 
-import { GiHamburgerMenu } from 'react-icons/gi'
+import { GiHamburgerMenu } from "react-icons/gi";
 
-import { VscChromeClose } from 'react-icons/vsc'
-
+import { VscChromeClose } from "react-icons/vsc";
 
 export const Navbar = () => {
-
-  const [navbarState, setNavbarState] = useState(false)
+  const [navbarState, setNavbarState] = useState(false);
 
   return (
-
     <>
-
-      <Nav id='nav'>
-
-        <div className='brand'>
-
-          <div className='container'>
-
-            <img src={logo} alt='Insure Logo' />
-
+      <Nav id="nav" style={{ position: "relative", zIndex: "5" }}>
+        <div className="brand">
+          <div className="container">
+            <img src={logo} alt="Insure Logo" />
           </div>
 
-          <div className='toggle'>
-
+          <div className="toggle">
             {navbarState ? (
-
               <VscChromeClose onClick={() => setNavbarState(false)} />
-
             ) : (
-
               <GiHamburgerMenu onClick={() => setNavbarState(true)} />
-
             )}
-
           </div>
-
         </div>
 
-
         <ul>
-
           <li>
-
-            <a href='#about'>How we work</a>
-
+            <a href="#about">How we work</a>
           </li>
 
           <li>
-
-            <a href='#'>Blog</a>
-
+            <a href="#">Blog</a>
           </li>
 
           <li>
-
-            <a href='#footer'>Account</a>
-
+            <a href="#footer">Account</a>
           </li>
 
           <li>
-
-            <a href='#main'>View Plans</a>
-
+            <a href="#main">View Plans</a>
           </li>
-
         </ul>
-
       </Nav>
 
-
       <ResponsiveNav state={navbarState}>
-
         <ul>
-
           <li>
-
-            <a href='#about' onClick={() => setNavbarState(false)}>
-
+            <a href="#about" onClick={() => setNavbarState(false)}>
               How we work
-
             </a>
-
           </li>
 
           <li>
-
-            <a href='#' onClick={() => setNavbarState(false)}>
-
+            <a href="#" onClick={() => setNavbarState(false)}>
               Blog
-
             </a>
-
           </li>
 
-
           <li>
-
-            <a href='#footer' onClick={() => setNavbarState(false)}>
-
+            <a href="#footer" onClick={() => setNavbarState(false)}>
               Account
-
             </a>
-
           </li>
 
           <li>
-
-            <a href='#main' onClick={() => setNavbarState(false)}>
-
+            <a href="#main" onClick={() => setNavbarState(false)}>
               View Plans
-
             </a>
-
           </li>
-
         </ul>
-
       </ResponsiveNav>
-
     </>
-
-  )
-
-}
-
+  );
+};
 
 // mobile viewport navigation
 
 const ResponsiveNav = styled.div`
-
   display: flex;
 
   background-color: hsl(0, 0%, 98%);
@@ -149,18 +95,16 @@ const ResponsiveNav = styled.div`
 
   transition: 0.3s ease-in-out;
 
-  top: ${({ state }) => (state ? '50px' : '-400px')};
+  top: ${({ state }) => (state ? "50px" : "-400px")};
 
-  font-family: 'Karla', sans-serif;
+  font-family: "Karla", sans-serif;
 
   ul {
-
     list-style-type: none;
 
     width: 100%;
 
     li {
-
       width: 100%;
 
       margin: 1.6rem 0;
@@ -170,13 +114,10 @@ const ResponsiveNav = styled.div`
       text-align: center;
 
       &:first-of-type {
-
         opacity: 0.7;
-
       }
 
       a {
-
         font-size: 1.5rem;
 
         transition: 0.3s ease-in-out;
@@ -187,28 +128,19 @@ const ResponsiveNav = styled.div`
 
         text-transform: uppercase;
 
-
         &:hover {
-
           color: hsl(270, 9%, 17%);
 
           text-decoration: underline;
-
         }
-
       }
-
     }
-
   }
-
-`
-
+`;
 
 // main viewport navigation
 
 const Nav = styled.nav`
-
   display: flex;
 
   justify-content: space-between;
@@ -224,9 +156,7 @@ const Nav = styled.nav`
   /* cursor: pointer; */
 
   .brand {
-
     .container {
-
       display: flex;
 
       justify-content: center;
@@ -240,26 +170,18 @@ const Nav = styled.nav`
       text-transform: uppercase;
 
       img {
-
         height: 1rem;
 
         color: hsl(273, 4%, 51%);
-
       }
-
     }
 
     .toggle {
-
       display: none;
-
     }
-
   }
 
-
   ul {
-
     display: flex;
 
     list-style-type: none;
@@ -268,14 +190,12 @@ const Nav = styled.nav`
 
     text-transform: uppercase;
 
-    font-family: 'Karla', sans-serif;
+    font-family: "Karla", sans-serif;
 
     cursor: pointer;
 
     li {
-
       a {
-
         text-decoration: none;
 
         font-size: 0.8rem;
@@ -291,7 +211,6 @@ const Nav = styled.nav`
         transition: 0.3s ease-in-out;
 
         &:hover {
-
           background-color: hsl(256, 26%, 20%);
 
           color: white;
@@ -303,19 +222,13 @@ const Nav = styled.nav`
           border: none;
 
           &:active {
-
             outline: none;
-
           }
-
         }
-
       }
 
       &:last-of-type {
-
         a {
-
           border: 2px solid grey;
 
           color: hsl(256, 26%, 20%);
@@ -328,30 +241,20 @@ const Nav = styled.nav`
 
           border-radius: 3px;
 
-
           &:hover {
-
             color: white;
 
             border: none;
-
           }
-
         }
-
       }
-
     }
-
   }
 
-
   @media screen and (min-width: 280px) and (max-width: 1080px) {
-
     padding: 1.1rem 2.5rem;
 
     .brand {
-
       display: flex;
 
       justify-content: space-between;
@@ -361,19 +264,12 @@ const Nav = styled.nav`
       width: 100%;
 
       .toggle {
-
         display: block;
-
       }
-
     }
 
     ul {
-
       display: none;
-
     }
-
   }
-
-`
+`;

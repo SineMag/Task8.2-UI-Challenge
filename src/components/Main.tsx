@@ -1,122 +1,91 @@
-import React from 'react'
+import React from "react";
 
-import styled from 'styled-components'
+import styled from "styled-components";
 
-import processIcon from '../assets/icon-snappy-process.svg'
+import processIcon from "../assets/icon-snappy-process.svg";
 
-import priceIcon from '../assets/icon-affordable-prices.svg'
+import priceIcon from "../assets/icon-affordable-prices.svg";
 
-import peopleIcon from '../assets/icon-people-first.svg'
+import peopleIcon from "../assets/icon-people-first.svg";
 
-import howWe from '../assets/bg-pattern-how-we-work-desktop.svg'
-
+import howWe from "../assets/bg-pattern-how-we-work-desktop.svg";
 
 export const Main = () => {
-
   return (
-
-    <MainSection id='main'>
-
-      <div className='title'>
-
-        <div className='hero-line'></div>
+    <MainSection id="main" style={{ position: "relative", zIndex: "5" }}>
+      <div className="title">
+        <div className="hero-line"></div>
 
         <h2>We're Different</h2>
-
       </div>
 
-      <div className='cycle'>
+      <div className="cycle">
+        <div className="items">
+          <img src={processIcon} alt="" />
 
-        <div className='items'>
-
-          <img src={processIcon} alt='' />
-
-          <div className='info'>
-
+          <div className="info">
             <h3>Snappy Process</h3>
 
             <p>
-
               Our application process can be completed in minutes, not hours.
-
               Don't get stuck filling in tedius forms.
-
             </p>
-
           </div>
-
         </div>
 
+        <div className="items">
+          <img src={priceIcon} alt="" />
 
-        <div className='items'>
-
-          <img src={priceIcon} alt='' />
-
-          <div className='info'>
-
+          <div className="info">
             <h3>Affordable Prices</h3>
 
             <p>
-
               We don't want you worrying about high monthly costs. Our prices
-
               may be low, but we still offer the best coverage possible.
-
             </p>
-
           </div>
-
         </div>
 
+        <div className="items">
+          <img src={peopleIcon} alt="" />
 
-        <div className='items'>
-
-          <img src={peopleIcon} alt='' />
-
-          <div className='info'>
-
+          <div className="info">
             <h3>People First</h3>
 
             <p>
-
               Our plans aren't full of conditions and clauses to prevent
-
               payouts. We make sure you're covered when you need it.
-
             </p>
-
           </div>
-
         </div>
-
       </div>
 
-
-      <div id='about' className='about'>
-
+      <div id="about" className="about" style={{ position: "relative" }}>
         <h3>Find out more about how we work</h3>
 
         <button>How we work</button>
-
+        <img
+          style={{
+            position: "absolute",
+            left: "86%",
+            top: "0",
+            height: "8.5rem",
+            zIndex: "1",
+          }}
+          src={howWe}
+          className="overlay"
+        />
       </div>
-
-      <img src={howWe} className='overlay' />
-
     </MainSection>
-
-  )
-
-}
-
+  );
+};
 
 const MainSection = styled.div`
-
   padding: 8rem 9rem 5rem 9rem;
 
   position: relative;
 
   .title {
-
     text-align: left;
 
     margin-bottom: 2rem;
@@ -130,59 +99,45 @@ const MainSection = styled.div`
     gap: 2rem;
 
     .hero-line {
-
       padding: 1px 3.5rem;
 
       background-color: hsl(273, 4%, 51%);
 
       opacity: 0.5;
-
     }
 
     h2 {
-
       font-size: 3rem;
 
       font-family: hsl(256, 26%, 20%);
-
     }
-
   }
 
-
   .cycle {
-
     display: flex;
 
     justify-content: center;
 
     gap: 2rem;
 
-    font-family: 'Karla', sans-serif;
-
+    font-family: "Karla", sans-serif;
 
     .items {
-
       padding: 2rem 0;
 
       background-color: hsl(0, 0%, 98%);
 
       img {
-
         height: 3.5rem;
 
         border-radius: 3rem;
-
       }
 
-
       .info {
-
         padding: 1.2rem 0;
 
         h3 {
-
-          font-family: 'DM Serif Display', serif;
+          font-family: "DM Serif Display", serif;
 
           font-size: 1.3rem;
 
@@ -191,24 +146,16 @@ const MainSection = styled.div`
           margin-bottom: 0.5rem;
 
           color: hsl(270, 9%, 17%);
-
         }
 
         p {
-
           color: hsl(273, 4%, 51%);
-
         }
-
       }
-
     }
-
   }
 
-
   .about {
-
     display: flex;
 
     justify-content: space-between;
@@ -223,11 +170,9 @@ const MainSection = styled.div`
 
     position: relative;
 
-    font-family: 'DM Serif Display', serif;
-
+    font-family: "DM Serif Display", serif;
 
     h3 {
-
       color: hsl(0, 0%, 98%);
 
       font-size: 3rem;
@@ -241,11 +186,9 @@ const MainSection = styled.div`
       max-width: 50%;
 
       margin: 0 4rem;
-
     }
 
     button {
-
       padding: 0.4rem 0.6rem;
 
       margin-right: 2rem;
@@ -269,22 +212,16 @@ const MainSection = styled.div`
       transition: 0.3s ease-in-out;
 
       &:hover {
-
         color: hsl(256, 26%, 20%);
 
         background-color: white;
 
         font-weight: 600;
-
       }
-
     }
-
   }
 
-
   .overlay {
-
     display: flex;
 
     position: absolute;
@@ -296,41 +233,30 @@ const MainSection = styled.div`
     z-index: 5;
 
     height: 11.7rem;
-
   }
 
-
   @media screen and (min-width: 280px) and (max-width: 720px) {
-
     padding: 8rem 2.2rem 5rem 2.2rem;
 
     margin-top: 5rem;
 
     .title {
-
       text-align: center;
 
       align-items: center;
 
       .hero-line {
-
         padding: 1px 6rem;
-
       }
 
       h2 {
-
         font-size: 2.7rem;
 
         opacity: 0.7;
-
       }
-
     }
 
-
     .cycle {
-
       display: flex;
 
       flex-direction: column;
@@ -342,41 +268,27 @@ const MainSection = styled.div`
       gap: 0;
 
       .items {
-
         text-align: center;
 
         img {
-
           height: 4.5rem;
-
         }
 
-
         .info {
-
           h3 {
-
             font-size: 1.7rem;
 
             font-weight: 600;
-
           }
 
           p {
-
             font-size: 1.2rem;
-
           }
-
         }
-
       }
-
     }
 
-
     .about {
-
       display: flex;
 
       flex-direction: column;
@@ -394,7 +306,6 @@ const MainSection = styled.div`
       width: 100%;
 
       h3 {
-
         max-width: 100%;
 
         width: 100%;
@@ -408,11 +319,9 @@ const MainSection = styled.div`
         margin-bottom: 4rem;
 
         letter-spacing: 0.2rem;
-
       }
 
       button {
-
         margin-left: 3rem;
 
         padding: 1.2rem 2rem;
@@ -424,14 +333,10 @@ const MainSection = styled.div`
         font-size: 1.4rem;
 
         opacity: 1;
-
       }
-
     }
 
-
     .overlay {
-
       display: none;
 
       /* display: flex;
@@ -447,9 +352,6 @@ const MainSection = styled.div`
       height: 15rem; */
 
       /* rotate: 10deg; */
-
     }
-
   }
-
-`
+`;
